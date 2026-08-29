@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+```
+<title>Happy Teacher's Day</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+<style>
+    :root {
+        --bg: #101014;
+        --paper: #f4efe5;
+        --ink: #17171b;
+        --muted: #77737a;
+        --accent: #e1a52c;
+        --accent-2: #8d5e0b;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        margin: 0;
+        min-height: 100vh;
+        background: var(--bg);
+        color: white;
+        font-family: "DM Sans", sans-serif;
+        overflow-x: hidden;
+    }
+
+    .container {
+        width: min(1200px, 90%);
+        margin: auto;
+    }
+
+    header {
+        min-height: 45vh;
+        display: grid;
+        place-items: center;
+        text-align: center;
+        padding: 80px 20px 40px;
+    }
+
+    .eyebrow {
+        font-family: "DM Mono", monospace;
+        font-size: 12px;
+        letter-spacing: .2em;
+        text-transform: uppercase;
+        color: var(--accent);
+    }
+
+    h1 {
+        font-family: "Playfair Display", serif;
+        font-size: clamp(4rem, 10vw, 9rem);
+        line-height: .85;
+        letter-spacing: -.05em;
+        margin: 25px 0;
+    }
+
+    h1 em {
+        color: var(--accent);
+    }
+
+    .subtitle {
+        max-width: 550px;
+        margin: auto;
+        color: #aaa7ad;
+        line-height: 1.7;
+    }
+
+    .teachers {
+        background: var(--paper);
+        color: var(--ink);
+        padding: 100px 0;
+    }
+
+    .section-heading {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+    .section-heading h2 {
+        font-family: "Playfair Display", serif;
+        font-size: clamp(2.8rem, 6vw, 5rem);
+        line-height: .95;
+        margin: 15px 0;
+    }
+
+    .section-heading p {
+        color: var(--muted);
+    }
+
+    .teacher-grid {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 18px;
+    }
+
+    .teacher-card {
+        position: relative;
+        min-height: 300px;
+        padding: 28px 22px;
+        background: #fffdf8;
+        border: 1px solid rgba(0,0,0,.1);
+        text-decoration: none;
+        color: var(--ink);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        transition:
+            transform .3s ease,
+            box-shadow .3s ease;
+    }
+
+    .teacher-card:hover {
+        transform: translateY(-10px) rotate(-1deg);
+        box-shadow: 0 25px 50px rgba(0,0,0,.15);
+    }
+
+    .teacher-number {
+        font-family: "DM Mono", monospace;
+        font-size: 11px;
+        color: var(--muted);
+    }
+
+    .teacher-card h3 {
+        font-family: "Playfair Display", serif;
+        font-size: 30px;
+        margin: 0;
+    }
+
+    .teacher-card p {
+        font-family: "DM Mono", monospace;
+        font-size: 11px;
+        letter-spacing: .1em;
+        text-transform: uppercase;
+        color: var(--accent-2);
+    }
+
+    .arrow {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        font-size: 22px;
+    }
+
+    footer {
+        background: var(--paper);
+        color: var(--muted);
+        text-align: center;
+        padding: 40px 20px 70px;
+        font-family: "DM Mono", monospace;
+        font-size: 11px;
+    }
+
+    @media (max-width: 900px) {
+        .teacher-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media (max-width: 550px) {
+        .teacher-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .teacher-card {
+            min-height: 220px;
+        }
+    }
+</style>
+```
+
+</head>
+
+<body>
+
+```
+<header>
+    <div class="container">
+
+        <div class="eyebrow">
+            A little something from your students
+        </div>
+
+        <h1>
+            Happy<br>
+            <em>Teacher's Day</em>
+        </h1>
+
+        <p class="subtitle">
+            Five teachers. Five subjects. Countless lessons,
+            memories and moments worth remembering.
+        </p>
+
+    </div>
+</header>
+
+
+<main class="teachers">
+
+    <div class="container">
+
+        <div class="section-heading">
+            <div class="eyebrow">
+                The classroom archive
+            </div>
+
+            <h2>
+                Choose your<br>
+                <em>teacher.</em>
+            </h2>
+
+            <p>
+                Open a page to see a small collection of memories.
+            </p>
+        </div>
+
+
+        <div class="teacher-grid">
+
+            <a class="teacher-card" href="E:\Eshitwa\Projects\Teachers\Physics\index.html">
+                <span class="teacher-number">01</span>
+
+                <div>
+                    <p>Subject</p>
+                    <h3>Physics</h3>
+                </div>
+
+                <span class="arrow">↗</span>
+            </a>
+
+
+            <a class="teacher-card" href="E:\Eshitwa\Projects\Teachers\English\index.html">
+                <span class="teacher-number">02</span>
+
+                <div>
+                    <p>Subject</p>
+                    <h3>English</h3>
+                </div>
+
+                <span class="arrow">↗</span>
+            </a>
+
+
+            <a class="teacher-card" href="E:\Eshitwa\Projects\Teachers\Mathematics\index.html">
+                <span class="teacher-number">03</span>
+
+                <div>
+                    <p>Subject</p>
+                    <h3>Mathematics</h3>
+                </div>
+
+                <span class="arrow">↗</span>
+            </a>
+
+
+            <a class="teacher-card" href="E:\Eshitwa\Projects\Teachers\Chemistry\index.html">
+                <span class="teacher-number">04</span>
+
+                <div>
+                    <p>Subject</p>
+                    <h3>Chemistry</h3>
+                </div>
+
+                <span class="arrow">↗</span>
+            </a>
+
+
+            <a class="teacher-card" href="E:\Eshitwa\Projects\Teachers\AI\index.html">
+                <span class="teacher-number">05</span>
+
+                <div>
+                    <p>Subject</p>
+                    <h3>AI</h3>
+                </div>
+
+                <span class="arrow">↗</span>
+            </a>
+
+        </div>
+
+    </div>
+
+</main>
+
+
+<footer>
+    Made with appreciation for the people who make learning memorable.
+</footer>
+```
+
+</body>
+</html>
