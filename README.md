@@ -29,12 +29,6 @@ const TEACHER = {
 
 Available themes: `physics`, `english`, `mathematics`, `chemistry`, `ai`.
 
-## Add real photos
-Replace the `.photo-placeholder` blocks with:
-```html
-<img src="assets/teachers/physics/photo-01.jpg" alt="Description">
-```
-and add suitable `object-fit: cover` styling.
 
 ## Replicate for 5 teachers
 Copy the folder/page and change only:
