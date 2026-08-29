@@ -1,0 +1,129 @@
+<!DOCTYPE HTML>
+<html lang="en" data-theme="Physics">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101014">
+  <title>Happy Teacher's Day — Teacher Name</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lucide-static@0.468.0/font/lucide.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/themes.css">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <div id="confetti-layer" aria-hidden="true"></div>
+
+  <header class="hero" id="top">
+    <div class="hero-orbit" aria-hidden="true"></div>
+    <div class="hero-content">
+      <p class="eyebrow">A little something from your students</p>
+      <h1><span>Happy</span><span>Teacher's Day</span></h1>
+      <p class="hero-subject" data-teacher-subject>Vishal Sir</p>
+      <a class="scroll-cue" href="#message" aria-label="Scroll to message">
+        <span>SCROLL TO BEGIN</span><i class="icon icon-arrow-down"></i>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="message-section section" id="message">
+      <div class="message-wrap reveal">
+        <p class="kicker">Vishal Sir,</p>
+        <h2>Thank you for making<br><em>learning</em> feel memorable.</h2>
+        <p class="message">
+          Some lessons leave the classroom with us. They become stories, habits,
+          questions, confidence and the little moments we remember long after
+          the bell has rung. This page is a small thank-you for all of them.
+        </p>
+        <p class="signature">— Your students</p>
+      </div>
+    </section>
+
+    <section class="memory-section section" id="memories">
+      <div class="memory-heading reveal">
+        <p class="kicker">Open when you're ready</p>
+        <h2>Memories, <em>printed.</em></h2>
+        <p>Tap the envelope. The memories are waiting inside.</p>
+      </div>
+
+      <div class="envelope-stage" id="envelope-stage">
+        <button class="envelope" id="envelope" aria-label="Open the envelope">
+          <span class="envelope-back"></span>
+          <span class="prints-preview">
+            <span class="mini-print p1"></span><span class="mini-print p2"></span>
+            <span class="mini-print p3"></span>
+          </span>
+          <span class="envelope-paper"></span>
+          <span class="envelope-flap"></span>
+          <span class="envelope-label">FOR YOU <i class="icon icon-heart"></i></span>
+        </button>
+
+          <article class="print print-2 quote-print">
+            <div class="quote-mark">“</div>
+            <blockquote>Great teachers don't just teach subjects. They teach us how to think.</blockquote>
+            <small>— A grateful student</small>
+          </article>
+
+          <article class="print print-4 quote-print">
+            <div class="quote-mark">“</div>
+            <blockquote>Every question was worth asking.</blockquote>
+            <small>— A classroom memory</small>
+          </article>
+
+          <article class="print print-6 quote-print">
+            <div class="quote-mark">“</div>
+            <blockquote>Thank you for believing in us before we believed in ourselves.</blockquote>
+            <small>— Your students</small>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="identity-section section" id="teacher">
+      <div class="identity-grid">
+        <div class="identity-intro reveal">
+          <p class="kicker">The person behind the lessons</p>
+          <h2>Meet your<br><em>teacher.</em></h2>
+          <p>A small archive card for a very important person.</p>
+        </div>
+
+        <article class="id-card reveal">
+          <div class="id-top">
+            <span>TEACHER ARCHIVE</span>
+            <span>2026</span>
+          </div>
+          <div class="id-body">
+            <div class="teacher-photo">
+              <div class="photo-placeholder">
+                <span class="placeholder-icon"><i class="icon icon-user-round"></i></span>
+                <span>TEACHER PHOTO</span>
+              </div>
+            </div>
+            <div class="teacher-data">
+              <p class="id-label">NAME</p>
+              <h3 data-teacher-name>Vishal Sir</h3>
+              <p class="id-label">SUBJECT</p>
+              <p class="data-value" data-teacher-subject>PHYSICS</p>
+              <div class="id-meta">
+                <div><p class="id-label">JOINED</p><strong data-teacher-joined>2025</strong></div>
+                <div><p class="id-label">EXPERIENCE</p><strong data-teacher-experience>02 years</strong></div>
+              </div>
+            </div>
+          </div>
+          <div class="id-footer">
+            <span data-teacher-code>PHY-2015</span>
+            <span>★ ★ ★ ★ ★</span>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.2/lib/anime.min.js"></script>
+  <script src="js/teachers.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
