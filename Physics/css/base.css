@@ -34,7 +34,7 @@ button { font: inherit; }
   letter-spacing: .15em; opacity: .45;
 }
 .kicker, .eyebrow {
-  font: 500 12px var(--mono); text-transform: uppercase; letter-spacing: .18em;
+  font: 500 12px var(--mono); text-transform: uppercase; letter-spacing: .18em; color: var(--accent);
 }
 .hero {
   min-height: 100svh; background: var(--bg); color: var(--white);
@@ -44,10 +44,11 @@ button { font: inherit; }
 .hero .eyebrow { opacity: 0; transform: translateY(10px); }
 .hero h1 {
   font: 800 clamp(4rem, 13vw, 11rem)/.82 var(--display);
+  color: var(--accent);
   letter-spacing: -.055em; margin: 25px 0; display: grid;
 }
 .hero h1 span { opacity: 0; transform: scale(.55); filter: blur(14px); }
-.hero h1 span:nth-child(2) { font-style: italic; }
+.hero h1 span:nth-child(2) { font-style: italic; color: var(--accent-2); }
 .hero-subject {
   color: var(--accent); font: 500 13px var(--mono); letter-spacing: .3em;
   opacity: 0; transform: translateY(10px);
@@ -157,7 +158,7 @@ em { color: var(--accent-2); font-style: italic; }
 .identity-intro em { color: var(--accent); }
 .identity-intro > p:last-child { color: #a4a1a5; max-width: 330px; line-height: 1.7; }
 .id-card {
-  background: var(--paper); color: var(--ink); padding: 22px; box-shadow: 0 30px 80px rgba(0,0,0,.35);
+  background: var(--ink); color: var(--paper); padding: 22px; box-shadow: 0 30px 80px rgba(0,0,0,.35);
   transform: rotate(1.2deg); max-width: 650px; justify-self: end;
 }
 .id-top, .id-footer { display: flex; justify-content: space-between; font: 10px var(--mono); letter-spacing: .12em; }
@@ -165,9 +166,9 @@ em { color: var(--accent-2); font-style: italic; }
 .id-body { display: grid; grid-template-columns: 190px 1fr; gap: 25px; padding: 25px 0; }
 .teacher-photo { aspect-ratio: 4/5; }
 .teacher-photo .photo-placeholder { height: 100%; }
-.id-label { margin: 0 0 5px; font: 9px var(--mono); letter-spacing: .15em; color: var(--muted); }
+.id-label { margin: 0 0 5px; font: 15px var(--mono); letter-spacing: .15em; color: var(--muted); }
 .teacher-data h3 { font: 700 33px/1 var(--display); margin: 0 0 20px; }
-.data-value { font: 500 13px var(--mono); margin: 0 0 25px; color: var(--accent-2); }
+.data-value { font: 500 23px var(--mono); margin: 0 0 25px; color: var(--accent); }
 .id-meta { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
 .id-meta strong { font: 500 12px var(--mono); }
 .id-quote { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 22px 0; display: grid; grid-template-columns: 30px 1fr; }
