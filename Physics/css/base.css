@@ -164,7 +164,7 @@ em { color: var(--accent-2); font-style: italic; }
 .id-top, .id-footer { display: flex; justify-content: space-between; font: 10px var(--mono); letter-spacing: .12em; }
 .id-top { border-bottom: 1px solid var(--line); padding-bottom: 14px; }
 .id-body { display: grid; grid-template-columns: 190px 1fr; gap: 25px; padding: 25px 0; }
-.teacher-photo { aspect-ratio: 4/5; }
+.teacher-photo { aspect-ratio: 4/5; overflow: hidden; object-fit: fill; object-position: center; display: block; }
 .teacher-photo .photo-placeholder { height: 100%; }
 .id-label { margin: 0 0 5px; font: 15px var(--mono); letter-spacing: .15em; color: var(--muted); }
 .teacher-data h3 { font: 700 33px/1 var(--display); margin: 0 0 20px; }
